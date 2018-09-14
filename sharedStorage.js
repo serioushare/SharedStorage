@@ -1,4 +1,12 @@
-
+/***[ SharedStorage API ]**********************************************************************
+ * @description: The SharedStorage api offers a storage object/namespace similar to Local-    *
+ *     and sessionStorage, but instead of storing for later use it shares it's stored data    *
+ *     betwean the window and it's workers.                                                   *
+ * @version:   0.1.0001                                                                       *
+ * @copyright: Copyright 2018  Serious Hare, All rights reserved.                             *
+ * @license:   Free to use and implement as is. Don't publish a modified version without my   *
+ *     writen consent.                                                                        *
+ *****************************************************************************[Serious Hare]***/
 (function(global){
 
     // Add the constant values isWindow and isWorker to identify the context that the script is running in.
@@ -8,7 +16,7 @@
     // Api Key used to identify the messages send to and from the different workers. If this key is found, the even tlistener
     // will stop propagation of the event so all message listeners should not receive messages meant for the sharedStorage api
     // All other message events will be untouched and will propagate to the other message listeners.
-    const apiKey = "sh-apis0001-54c310d4-5c1e084d-574c1bb0";
+    const apiKey = "sh-apis0001-7292d3c5-0eb71d00-8ed8a340";
 
     /***[ private class SharedStorage ]************************************************************
      * @description: This is the base SharedStorage class, used to create a sharedStorage object. *
