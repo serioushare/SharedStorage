@@ -21,15 +21,15 @@ The sharedStorage object is created when the script is loaded, and doesn't need 
   
 ### Methods
 * `SharedStorage.key(n)`<br>
-  When passed a number n, this method will return the name of the nth key in the storage.
+  Returns the nth key in the storage or `null` when out of range.
 * `SharedStorage.getItem(key)`<br>
-  When passed a key name, will return that key's value.
+  Return the value stored at the given key or null if the key doesn't exist
 * `SharedStorage.setItem(key, value)`<br>
-  When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.
+  Stores a value at the given key, or updates the value if the key already exists.
 * `SharedStorage.removeItem(key)`<br>
-  When passed a key name, will remove that key from the storage.
+  Removes the key from the storage.
 * `SharedStorage.clear()`<br>
-  When invoked, will empty all keys out of the storage.
+  Removes all keys from the storage.
 
 ## Examples
 
