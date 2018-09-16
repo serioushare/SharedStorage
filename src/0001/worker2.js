@@ -1,5 +1,5 @@
 
-importScripts("sharedStorage.min.js");
+importScripts("sharedStorage.js");
 
 sharedStorage.onready = function(){
     sharedStorage.setItem("worker2", "data");
