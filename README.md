@@ -23,7 +23,7 @@ The sharedStorage object is created when the script is loaded, and doesn't need 
 * `SharedStorage.key(n)`<br>
   Returns the nth key in the storage or `null` when out of range.
 * `SharedStorage.getItem(key)`<br>
-  Return the value stored at the given key or null if the key doesn't exist
+  Return the value stored at the given key or `null` if the key doesn't exist
 * `SharedStorage.setItem(key, value)`<br>
   Stores a value at the given key, or updates the value if the key already exists.
 * `SharedStorage.removeItem(key)`<br>
