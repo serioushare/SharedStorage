@@ -40,7 +40,7 @@ This example shows how to share basic page data with your workers. The page stor
 ```html
 <html>
   <head>
-    <script src="/js/apis/sharedStorage.js"></script>
+    <script src="sharedStorage.js"></script>
     <script>
       window.onload = function initPage(){
         // storing the page data
@@ -48,7 +48,7 @@ This example shows how to share basic page data with your workers. The page stor
         sharedStorage.setItem("article", "SharedStorage now native in all major browsers");
         
         // creating a worker
-        pageWorker = new Worker('/js/workers/pageWorker.js');
+        pageWorker = new Worker('pageWorker.js');
       }
     </script>
   </head>
@@ -62,7 +62,7 @@ This example shows how to share basic page data with your workers. The page stor
 ##### pageWorker.js
 ```javascript
 // import the sharedStorage api
-importScripts('../apis/sharedStorage.js');
+importScripts('sharedStorage.js');
 
 var pageData;
 
